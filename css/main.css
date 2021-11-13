@@ -219,29 +219,107 @@ p {
 	margin: 1em 0;
 }
 /* Basic style settings */
+/* ------------------------------------------------------------------------
+	Starting my CSS
+--------------------------------------------------------------------------*/
 
-/* start my own css */
+/* HomePage siting */
 .container {
     margin: 0 auto;
     padding: 1em;
 	min-width: 500px;
 }
+/* start nav style */
 .nav-part ul li a{
 	color: white;
 	display: block;
+	width: 70%;
 	text-decoration: none;
 	text-align: center;
 	padding: 1em;
+	margin: auto;
 }
 
 .nav-part ul li a:hover,
 .nav-part ul li a:focus {
 	color: white;
-	margin-left: 0.5em;
-	margin-right: 0.5em;
+	transform: scale(1.2);
+	transition: transform 0.2s;
 }
 /* add grid to nav */
 .nav-part{
 	background-color: #191515;
 	display: grid;
+	grid-template-columns:repeat(1,1fr);
+	grid-template-rows:repeat(7, auto);
+}
+/* size the logo */
+.nav-part ul li img{
+	width: 50%;
+	margin: 0.5em;
+	margin-bottom: 0;
+}
+
+/* start banner */
+
+.banner img{
+	display: none;
+}
+.banner h2{
+	display: block;
+	background-color: #8A231C;
+	width: 300px;
+	text-align: center;
+	margin: auto;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	border: 1px solid black;
+}
+
+/* start main projuct */
+.video img{
+	max-width: 1200px;
+	display: block;
+	margin:auto;
+	border: 1px solid black;
+}
+/* size menu element */
+.vision{
+	display: grid;
+	width: 80%;
+	max-width: 500px;
+	margin: auto;
+}
+
+.vision div{
+	background-color: #FFD52E;
+	border: black 1px solid;
+	margin: 2em;
+}
+.vision h4{
+	margin-left:0.5em ;
+}
+
+/* size backToTop and Contact mini button */
+.footer-button ul li img{
+	width: 100px;
+	display: inline-block;
+}
+
+/* make them flexbox */
+.footer-button ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+/* footer design */
+.site-footer{
+	background-color: #191515;
+	color: white;
+	margin: auto;
+	padding: 2em;
+}
+
+.site-footer .im{
+	display: none;
 }
