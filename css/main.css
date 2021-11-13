@@ -339,13 +339,13 @@ p {
 @keyframes clickIcon {
 	0% {
 		transform: scale(1);
-		color: none;
+		color: white;
 		opacity: 0.8;
 	}
 
 	20% {
 		transform: scale(0.5);
-		color: none;
+		color: white;
 		opacity: 0.8;
 	}
 
